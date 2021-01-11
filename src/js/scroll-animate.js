@@ -1,6 +1,7 @@
 // Pega todos os elementos que devem ser animados
 const scrollElements = document.querySelectorAll('[data-anime-scroll]');
 const animationScrollClass = 'animate';
+const percentScreen = window.innerWidth > 480 ? .75 : .85;
 
 // Função debounce para aumentar a perfomance
 function debounce(func, wait) {
@@ -13,7 +14,7 @@ function debounce(func, wait) {
 
 // Função para verificar 
 function animeScroll() {
-    const pageTop = window.pageYOffset + (window.innerHeight * .75);
+    const pageTop = window.pageYOffset + (window.innerHeight * percentScreen);
     scrollElements.forEach((element) => {
         element.classList.toggle('animate', pageTop > element.offsetTop);
     });
