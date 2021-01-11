@@ -1,7 +1,9 @@
 // Pega todos os elementos que devem ser animados
+const width = window.innerWidth;
 const scrollElements = document.querySelectorAll('[data-anime-scroll]');
 const animationScrollClass = 'animate';
-const percentScreen = window.innerWidth > 480 ? .75 : .85;
+const percentScreen = width > 480 ? .75 : .90;
+const timerDebounce = width > 480 ? 100 : 60;
 
 // Função debounce para aumentar a perfomance
 function debounce(func, wait) {
@@ -23,4 +25,4 @@ function animeScroll() {
 animeScroll();
 
 // Adiciona um ouvidor de eventos de scroll na janela
-window.addEventListener('scroll', debounce(animeScroll, 100));
+window.addEventListener('scroll', debounce(animeScroll, timerDebounce));
