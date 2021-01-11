@@ -1,0 +1,16 @@
+.title-box {
+
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 105%;
+        left: calc(50% - 100px);
+        padding: 2px 100px;
+        background-color: $primary-color;
+    }
+
+}

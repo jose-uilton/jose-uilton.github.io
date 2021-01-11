@@ -1,0 +1,22 @@
+@mixin salt-image-frame($color, $direction) {
+
+    border: 10px solid $color;
+    
+    img {
+        position: relative;
+        bottom: 30px;
+    }
+
+    @if $direction == 'left' {
+        img {
+            right: 30px;
+        }
+    } @else if $direction == 'right' {
+        img {
+            left: 30px;
+        }
+    } @else {
+        @error "Indique uma direction certa!";
+    }
+
+}

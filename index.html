@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Uilton</title>
+
+    <!-- Dependências -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/361600d25d.js" crossorigin="anonymous"></script>
+    <!-- Fim das dependências -->
+
+    <link rel="stylesheet" href="dist/css/index.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <span class="logo"><span class="destaq">J</span>osé <span class="destaq">U</span>ilton</span>
+        <nav id="navigation" class="header__navigation">
+            <ul class="list-links">
+                <li class="list-links__item"><a class="list-links__link" href="#sobre">Sobre</a></li>
+                <li class="list-links__item"><a class="list-links__link" href="#servicos">Meus serviços</a></li>
+                <li class="list-links__item"><a class="list-links__link" href="#habilidades">Minhas habilidades</a></li>
+                <li class="list-links__item"><a class="list-links__link" href="#portfolio">Portfólio</a></li>
+                <li class="list-links__item"><a class="list-links__link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <span class="fas fa-bars header__btn-menu" id="btn-menu"></span>
+    </header>
+    <!-- Fim do header -->
+
+    <!-- Section de apresentação -->
+    <section class="presentacion">
+        <div class="presentacion__content">
+            <h1>Olá Meu Nome é José Uilton e Sou <span class="destaq">Desenvolvedor Web</span></h1>
+            <p>Sou desenvolvedor front-end e web design, trabalhando sempre com tecnologias modernas, tudo para trazer a melhor qualidade possível. Invista na nova forma de vender, comunicar e produzir!</p>
+            <a href="#contato" class="btn-primary">Contrate-me</a>
+        </div>
+    </section>
+    <!-- Fim da section de apresentação -->
+
+    <!-- Section sobre mim -->
+    <section id="sobre" class="sobre">
+        <div class="title-box">
+            <h2><span class="destaq">Sobre</span></h2>
+            <p class="title-box__desc">Quem eu sou</p>
+        </div>
+        <div class="info">
+            <div class="info__image">
+                <img src="images/eu.jpg" alt="José Uilton">
+            </div>
+            <div class="info__text">
+                <p>Olá meu nome é José Uilton, sou desenvolvedor front-end e web designer, apaixonado pela programação e pela tecnologia, sempre dedico e esforço e carinho nos meus trabalhos, trabalho como freelancer sempre com o que há mais de novo no mercado.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da section sobre mim -->
+
+    <!-- Section meus serviços -->
+    <section id="servicos" class="servicos">
+        <div class="title-box">
+            <h2>Meus <span class="destaq">Serviços</span></h2>
+            <p class="title-box__desc">O que eu faço</p>
+        </div>
+        <div class="cards">
+            <div class="cards__card">
+                <span class="card__icon fas fa-desktop"></span>
+                <h3>Desenvolvedor front-end</h3>
+                <p>Desenvolvo a parte de front-end do site sempre com as melhores ferramentas.</p>
+            </div>
+            <div class="cards__card">
+                <span class="card__icon fas fa-palette"></span>
+                <h3>Web Designer</h3>
+                <p>Crio designs de sites modernos e minimalistas.</p>
+            </div>
+            <div class="cards__card">
+                <span class="card__icon fas fa-cogs"></span>
+                <h3>Otimização de SEO</h3>
+                <p>Otimizo o seu site para os mecanismos de busca.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da section com os meus serviços -->
+
+    <!-- Section minhas habilidades -->
+    <section id="habilidades" class="habilidades">
+        <div class="title-box">
+            <h2><span class="destaq">Minhas</span> Habilidades</h2>
+            <p class="title-box__desc">O que eu sei</p>
+        </div>
+        <div class="skills">
+            <h3 class="skills__title">Front-end</h3>
+            <ul class="list-skill">
+                <li class="list-skill__item">HTML5</li>
+                <li class="list-skill__item">CSS3</li>
+                <li class="list-skill__item">Sass</li>
+                <li class="list-skill__item">Bootstrap</li>
+                <li class="list-skill__item">Javascript</li>
+                <li class="list-skill__item">React</li>
+            </ul>
+        </div>
+        <div class="skills">
+            <h3 class="skills__title">Web Design</h3>
+            <ul class="list-skill">
+                <li class="list-skill__item">Figma</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Fim da section minhas habilidades -->
+
+    <!-- Section portfólio -->
+    <section id="portfolio" class="portfolio">
+        <div class="title-box">
+            <h2><span class="destaq">Portfólio</span></h2>
+            <p class="title-box__desc">O que eu fiz</p>
+        </div>
+        <div class="cards">
+            <div class="cards__card">
+                <img src="images/loja.jpg" alt="Template Ecommerce" class="card__image">
+                <h3>Template Para Ecommerce</h3>
+                <p>Desenvolvi um template junto com o design de um ecommerce de uma loja de smartphones.</p>
+            </div>
+            <div class="cards__card">
+                <img src="images/portfolio.jpg" alt="Meu Portfólio" class="card__image">
+                <h3>E Este Site</h3>
+                <p>Desenvolvi o design e toda a parte visual e interativa.</p>
+            </div>
+            <div class="cards__card">
+                <img src="images/restaurante.jpg" alt="Template hamburger" class="card__image">
+                <h3>Template Para Site de uma Hamburgueria</h3>
+                <p>Desenvolvi um template e o design de um site sobre uma hamburgueria.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da section portfólio -->
+
+    <!-- Section contato -->
+    <section id="contato" class="contato">
+        <div class="title-box">
+            <h2>Tem Algum Projeto em Mente? <span class="destaq">Entre em Contato.</span></h2>
+            <p class="title-box__desc">Na grande parte do tempo estou online</p>
+        </div>
+        <div class="cards">
+            <div class="cards__card">
+                <a href="mailto:programasuilton@gmail.com" target="_blank">
+                    <span class="card__icon fas fa-envelope"></span>
+                    <h3>Pelo Email</h3>
+                    <p>programasuilton@gmail.com</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="https://api.whatsapp.com/send?phone=5587992084588" target="_blank">
+                    <span class="card__icon fab fa-whatsapp"></span>
+                    <h3>Pelo Whatsapp</h3>
+                    <p>(087) 99208-4588</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="https://www.instagram.com/jose_uilton_/" target="_blank">
+                    <span class="card__icon fab fa-instagram"></span>
+                    <h3>Pelo Instagram</h3>
+                    <p>@jose_uilton_</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da section contato -->
+
+    <!-- Footer -->
+    <footer>
+        <span class="logo"><span class="destaq">J</span>osé <span class="destaq">U</span>ilton</span>
+        <ul class="list-links">
+            <li class="list-links__item"><a href="https://www.instagram.com/jose_uilton_/" class="list-links__link fab fa-instagram"></a></li>
+            <li class="list-links__item"><a href="https://github.com/jose-uilton" class="list-links__link fab fa-github"></a></li>
+            <li class="list-links__item"><a href="https://api.whatsapp.com/send?phone=5587992084588" class="list-links__link fab fa-whatsapp"></a></li>
+        </ul>
+    </footer>
+    <!-- Fim do footer -->
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>

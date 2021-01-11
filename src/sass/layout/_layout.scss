@@ -1,0 +1,49 @@
+.info {
+
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        margin-top: 10px;
+    }
+
+    @media (min-width: $desktop) {
+
+        flex-direction: row;
+
+        &__text {
+            flex: 70%;
+            padding-left: 40px; 
+        }
+    
+        &__image {
+            @include salt-image-frame($primary-color, 'right');
+            flex: 30%;
+        }
+
+    }
+
+}
+
+.sobre, .habilidades, .contato {
+    color: white;
+    background-color: $secondary-color;
+}
+
+section {
+    padding: 10px 25px 15px 25px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: $desktop) {
+
+    section {
+        padding: 20px 50px 30px 50px;
+    }
+
+}

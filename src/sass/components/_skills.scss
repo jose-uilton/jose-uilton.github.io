@@ -1,0 +1,28 @@
+.skills {
+
+    margin-bottom: 10px;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+}
+
+.list-skill {
+
+    &__item {
+
+        display: inline;
+        border: 2px solid $primary-color;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-right: 15px;
+        transition: all .6s;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+
+    }
+
+}

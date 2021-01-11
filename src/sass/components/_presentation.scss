@@ -1,0 +1,23 @@
+.presentacion {
+
+    min-height: 85vh;
+    padding: 25px 10px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),url('../../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+@media (min-width: $desktop) {
+
+    .presentacion {
+        padding: 50px 20px;
+
+        &__content {
+            width: 70%;
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+html {
+
+    font-family: $content-font;
+    line-height: 1.4;
+    font-size: 14px;
+    color: $text-color;
+
+    @media (min-width: $tablet) {
+        font-size: 15.5px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 16px;
+    }
+
+}
+
+h1 {
+    font-family: $title-font;
+    font-size: $font-size-biggest;
+}
+
+h2 {
+    font-size: $font-size-largest;
+}
+
+p, a, li, h3 {
+    font-size: $font-size-large;
+}
+
+.destaq {
+    font-size: 1.2em;
+    color: $primary-color;
+}
+
+.logo {
+    font-size: $font-size-largest;
+    font-weight: 700;
+}

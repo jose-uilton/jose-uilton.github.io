@@ -1,0 +1,24 @@
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid darken($secondary-color, 5);
+    padding: 10px 20px;
+    color: white;
+    background-color: $secondary-color;
+
+    .list-links {
+
+        &__item {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        &__link {
+            font-size: $font-size-largest;
+        }
+
+    }
+
+}
