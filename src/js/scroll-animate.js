@@ -13,7 +13,7 @@ function debounce(func, wait) {
 
 // Função para verificar 
 function animeScroll() {
-    const pageTop = window.pageYOffset + (window.innerHeight * .70);
+    const pageTop = window.pageYOffset + (window.innerHeight * .75);
     scrollElements.forEach((element) => {
         element.classList.toggle('animate', pageTop > element.offsetTop);
     });
