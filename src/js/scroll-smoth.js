@@ -1,5 +1,5 @@
 // Pega o array de links
-let links = document.querySelectorAll('.list-links__link');
+let links = document.querySelectorAll('a[data-scroll="smoth"]');
 
 // Adiciona um evento a cada um para realizar o scoll suave
 links.forEach(link => {

@@ -7,18 +7,20 @@
         margin-top: 10px;
     }
 
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
 
         flex-direction: row;
 
         &__text {
-            flex: 70%;
-            padding-left: 40px; 
+            flex: 65%;
+            max-width: 65%;
+            padding-left: 40px;
         }
     
         &__image {
             @include salt-image-frame($primary-color, 'right');
             flex: 30%;
+            max-width: 30%;
         }
 
     }

@@ -1,9 +1,11 @@
 .cards {
 
     display: flex;
+    flex-wrap: wrap;
 
     &__card {
 
+        flex: 100%;
         border-radius: 10px;
         padding: 10px;
         margin: 5px auto;
@@ -11,20 +13,12 @@
         color: white;
         background-color: $secondary-color;
 
-    }
-
-    @media (min-width: $tablet) {
-
-        &__card {
+        @media (min-width: $tablet) {
             flex: 45%;
             max-width: 45%;
-        }
+        } 
 
-    }
-
-    @media (min-width: $desktop) {
-
-        &__card {
+        @media (min-width: $desktop) {
             flex: 32.32%;
             max-width: 32.32%;
         }
