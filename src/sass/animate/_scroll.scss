@@ -1,0 +1,25 @@
+[data-anime-scroll] {
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+[data-anime-scroll="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime-scroll="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime-scroll="up"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime-scroll="down"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime-scroll].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
